@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zodiac Form</title>
+        <link rel="stylesheet" href="stylesheets.css">
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="stylesheets.css">
+    </head>
+    <body>
+        <form action ="index.html" method="post">
+            <h1> Tell Me Your Sign </h1>
+    <fieldset>
+        <legend><span class="number">1</span>The Basics:</legend>
+        <label for="name"> Name:</label>
+                <input type="text" id="name" name="user_name">
+        <label for="mail"> Email</label>
+                <input type="email" id="mail" name="user_email">
+        <label for="password">Password</label>
+                <input type="password" id="password" name="user_password">
+    </fieldset>
+    
+    <!****** Begin Zodiac Selection Options *******>
+    
+    <fieldset>
+        <legend><span class="number">2</span> The Good Stuff </legend>
+                <label for:"comment"> Something to say? </label>
+            <textarea id="bio" name="user_bio"> </textarea>
+                <label for="sign">What's Your Zodiac Sign?</label>
+        <select id="job" name="user_job">
+            <optgroup label="fire">
+                    <option value="leo">Leo</option>
+                    <option value="Aries"> Aries</option>
+                    <option value="Sagittarius"> Sagittarius</option>
+            </optgroup>
+            <optgroup label="air">
+                    <option value="Gemini">Gemini</option>
+                    <option value="Libra">Libra</option>
+                    <option value="Aquarius">Aquarius</option>
+            </optgroup>
+            <optgroup label="water">
+                <option value="Cancer">Cancer</option>
+                    <option value="Scorpio">Scorpio</option>
+                    <option value="Pisces">Pisces</option>
+                      </optgroup>
+            <optgroup label="earth">
+                <option value="Taurus">Taurus</option>
+                <option value="Virgo">Virgo</option>
+                 <option value="Capricorn">Capricorn</option>
+                </optgroup>
+        </select>
+    </fieldset>
+    
+    <button type="submit">TELL ME</button>
+        </form>
+      
+      
+    </body>
+</html>
